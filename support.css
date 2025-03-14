@@ -1,0 +1,134 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #FFD700; /* Светло-желтый */
+    color: #000; /* Черный текст */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  br{
+    display: none;
+  }
+  
+  header {
+    background-color: #000; /* Черный */
+    color: #FFD700; /* Желтый */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #FFD700;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+  }
+  
+  .faq-question::before { /* Плюс перед вопросом */
+    content: "+";
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  
+  #chat-window {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    min-height: 150px;
+    position: relative; /* Для абсолютного позиционирования сообщения */
+  }
+  
+  #chat-window::before { /* Рамка вокруг сообщения оператора */
+    content: " ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #000;
+    background-color: #f0f0f0; /* Светло-серый фон */
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    z-index: -1; /*  Помещает за текст */
+  }
+  
+  
+  #chat-window p {
+    margin: 10px;
+  }
+  
+  #chat-input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #FFD700;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 500px) {
+    nav ul {
+      flex-direction: column; /* Меню в колонку */
+    }
+    nav li {
+      margin: 10px 0; /* Отступ сверху и снизу */
+    }
+    br{
+      display: inline;
+    }
+  }

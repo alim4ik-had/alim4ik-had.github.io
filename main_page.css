@@ -1,0 +1,856 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+.menu_header{
+  display: none;
+}
+.container {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Автоматическое распределение пространства между элементами */
+  }
+  .item {
+    flex: none; /* Элементы занимают равное пространство */
+  }
+  .header_css {
+    padding-top: 16px;
+    padding-left: 15px;
+    width: 100%;
+    height: 88px;
+    background: rgba(231,248,243,1);
+    overflow: hidden;
+  }
+  .header_Ecoride {
+    color: rgba(0,0,0,1);
+    font-family: Joan;
+    font-weight: Regular;
+    font-size: 40px;
+    text-align: center;
+  }
+  .list_head {
+    white-space: nowrap;
+    color: rgba(0,0,0,1);
+    font-family: Inter;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .enter_search{
+    font-family: Inter;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 25px;
+  }
+  .first_img_div {
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    width: 100%;
+    height: 619px;
+    background: url("images/main_image_first.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px
+    
+  }
+  .slogan_back {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 40px;
+    padding: 0px 10px;
+    width: 632px;
+    height: 155px;
+    background: rgba(0,0,0,0.2);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+  }
+  .slogan {
+    color:rgb(222, 250, 63);
+    font-family: Montserrat;
+    font-weight: SemiBold;
+    font-size: 40px;
+    text-align: left;
+  }
+  .tarif_button {
+    margin: 100px 40px;
+    width: 229px;
+    height: 48px;
+    background: rgba(224,193,25,1);
+    border: 0.5px solid rgba(0,0,0,1);
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+    border-bottom-left-radius: 37px;
+    border-bottom-right-radius: 37px;
+    overflow: hidden;
+    color: rgba(0,0,0,1);
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 25px;
+    text-align: center;
+  }
+.tarif_button:hover,
+.download_button:hover{
+    background:rgb(182, 158, 19);
+}
+.title {
+    width: 100%;
+    color: rgba(0,0,0,1);
+    font-family: Montserrat;
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0px;
+  }
+  .sale_img {
+    width: 150px;
+    height: 150px;
+    background: url("images/sale.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .description {
+    color: rgba(0,0,0,1);
+    text-align: center;
+  }
+  .sentence{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  .eco_img {
+    width: 150px;
+    height: 150px;
+    background: url("images/экология.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  
+  }
+  .station_img {
+    width: 150px;
+    height: 150px;
+    background: url("images/station.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+.why_we_list{
+    padding: 0px 55px;
+    text-align: center;
+}
+
+.parent {
+    display: flex; /* Включаем flexbox */
+    flex-direction: column; /* Устанавливаем направление колонны */
+    align-items: center; /* Центрируем элементы по горизонтали (по желанию) */
+    width: 420px;
+  }
+  .bike {
+    padding-top: 10px;
+    width: 380px;
+    height: 72px;
+    background: rgba(1,1,1,1);
+    opacity: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255,255,255,1);
+    font-family: Times New Roman;
+    font-size: 40px;
+    text-align: center;
+  }
+  .scooter {
+    padding-top: 10px;
+    width: 380px;
+    height: 72px;
+    background: rgba(255,255,255,0.7699999809265137);
+    opacity: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0,0,0,1);
+    font-family: Times New Roman;
+    font-size: 40px;
+    text-align: center;
+  }
+.bike_scooter{
+    margin: 40px 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 75px;
+}
+.second_img_div {
+    display: flex; /* Включаем flexbox */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+    width: 100%;
+    height: 670px;
+    background: url("images/second_img_div.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 80px;
+  }
+  .circle {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: url("images/круг.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .tarif_info {
+    width: 70%;
+    height: 570px;
+    background: rgba(224,193,25,1);
+    border-radius: 100px;
+    margin: 0px 40px;
+  }
+  .minute_tarif {
+    width: 100%;
+    color: rgba(0,0,0,1);
+    font-family: Vast Shadow;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .tarif_3R {
+    white-space: nowrap;
+    width: 236px;
+    color: rgba(0,0,0,1);
+    font-family: Montserrat;
+    font-size: 64px;
+    text-align: left;
+  }
+  .tarif_1R {
+    white-space: nowrap;
+    width: 223px;
+    color: rgba(0,0,0,1);
+    font-family: Montserrat;
+    font-size: 64px;
+    text-align: left;
+  }
+  .booking {
+    width: 298px;
+    color: rgba(0,0,0,0.5699999928474426);
+    font-family: Montserrat;
+    font-size: 32px;
+    text-align: left;
+  }
+  .tarif_description {
+    width: 417px;
+    margin-left: 100px;
+    color: rgba(0,0,0,1);
+    font-family: Montserrat;
+    font-size: 32px;
+    text-align: left;
+  }
+.minute_tarif_container{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    padding-top: 60px;
+}
+.phone_img {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+  }
+  .download_button {
+    width: 310px;
+    height: 70px;
+    background: rgba(224,193,25,1);
+    border-radius: 100px;
+    color: rgba(0,0,0,1);
+    font-family: Inter;
+    font-size: 33px;
+    text-align: center;
+  }
+  .download_button_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .download_description {
+    width: 761px;
+    color: rgba(0,0,0,1);
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 24px;
+    text-align: center;
+  }
+  .download_description_container{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .navbar {
+    padding: 10px 0px; /* Отступы вокруг навигации */
+}
+
+.nav-links {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox для размещения в ряд */
+}
+.nav-links li {
+    margin-right: 20px; /* Отступы между элементами списка */
+}
+
+.nav-links a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-family: Inter;
+}
+footer{
+    background: rgba(122, 121, 121, 1);
+}
+footer div:first-child,
+footer div:nth-child(2){
+    display: flex; 
+    justify-content: space-between;
+    padding: 0px 15px;
+
+}
+.footer_EcoRide {
+  color: rgba(255,255,255,1);
+  font-family: Hind Mysuru;
+  font-weight: Light;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+.subscribe {
+    display: flex; 
+    justify-content: space-between;
+    align-items:center;
+    width: 320px;
+    height: 60px;
+    font-size: 20px;
+    background: rgba(255,255,255,1);
+    border: 0.5px solid rgba(0,0,0,1);
+    color: rgba(0,0,0,1);
+    font-family: Hind Mysuru;
+    padding: 0px 35px;
+  }
+  .copyrigth {
+    width: 100%;
+    color: rgba(255,255,255,1);
+    font-family: Hind Mysuru;
+    font-weight: Light;
+    font-size: 15px;
+    text-align: left;
+    padding: 0px 15px;
+  }
+  .tarif_text{
+    margin-right: 100px;
+  }
+.img_phone{
+  width: auto;
+  height: 600px;
+}
+@media (max-width: 990px) {
+  .slogan {
+    font-size: 30px;
+  }
+  .tarif_button {
+    font-size: 20px;
+  }
+  .drop{
+    display: none;
+  }
+  .sentence{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  .bike {
+    width: 220px;
+    font-size: 30px;
+  }
+  .scooter {
+    width: 235px;
+    font-size: 30px;
+    text-align: center;
+  }
+.bike_scooter{
+    padding: 0px;
+    justify-content: center;
+}
+.second_img_div{
+  height: 600px;
+}
+.tarif_info{
+  height: 430px;
+  margin: 0px 30px;
+}
+.minute_tarif{
+  font-size: 44px;
+}
+.tarif_text{
+  margin-right: 0px;
+}
+.tarif_1R,
+.tarif_3R,
+.booking{
+  text-align: center;
+  width: 100%;
+}
+.tarif_description{
+  display: none;
+}
+.circle{
+  width: 85px;
+  height: 85px;
+}
+.img_phone{
+  height: 515px;
+}
+.download_button{
+  width: 200px;
+  font-size: 25px;
+}
+.download_description{
+  font-size: 20px;
+}
+}
+@media (max-width: 1270px) and (min-width: 990px){
+  .download_button{
+    font-size: 30px;
+    width: 250px;
+  }
+  .img_phone{
+    height: 580px;
+  }
+  .download_description{
+    font-size: 23px;
+  }
+  .minute_tarif_container{
+    justify-content: space-around;
+    padding:0px;
+    margin: 50px 15px;
+  }
+  .minute_tarif{
+    font-size: 55px;
+
+  }
+  .tarif_text{
+    margin-right: 60px;
+  }
+  .tarif_3R,
+  .tarif_1R{
+    font-size: 55px;
+  }
+  .tarif_description{
+    margin:0px;
+    font-size: 26px;
+
+  }
+  .tarif_info{
+    height: 540px;
+  }
+  .bike_scooter{
+    justify-content: center;
+    padding: 0px;
+  }
+  .bike, .scooter{
+    width: 350px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 1010px){
+  .drop_li{
+    display: none;
+  }
+  .social{
+    height: auto;
+    width: 40px;
+  }
+  .subscribe{
+    width: 310px;
+    height: 50px;
+    font-size: 18px;
+    justify-content: space-around;
+  }
+  .telegramm{
+    height: auto;
+    width: 25px;
+  }
+  .footer_EcoRide{
+    font-size: 35px;
+  }
+}
+@media(max-width: 620px){
+  .subscribe{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0px;
+  }
+  .nav-links a{
+    font-size: 18pxs;
+  }
+  .footer_EcoRide{
+    font-size: 30px;
+  }
+  .social{
+    height: auto;
+    width: 35px;
+  }
+  .in_column{
+    flex-direction: column;
+  }
+  .nav-links li{
+    margin-bottom: 5px;
+  }
+  .header_Ecoride{
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .list_head{
+    font-size: 17px;
+  }
+  .header_css{
+    height: 65px;
+  }
+  .first_img_div{
+    justify-content: end;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .slogan_back{
+    width: 440px;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .why_we_list{
+    flex-direction: column; 
+  }
+  h3{
+    text-align: center;
+  }
+  .sale_img{
+    height: 90px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  .parent{
+    align-items: end;
+    margin: 15px;
+    flex-direction: row;
+  }
+  br{
+    display: none;
+  }
+  .eco_img{
+    height: 90px;
+    width: 200px;
+    margin-right: 24px;
+  }
+  .station_img{
+    width: 230px;
+    height: 90px;
+    margin-right: 24px;
+  }
+  .description{
+    text-align: left;
+  }
+  .scooter,
+  .bike{
+    height: 55px;
+    font-size: 25px;
+  }
+  .first_img_div,
+  .second_img_div{
+    height: 550px;
+  }
+  .tarif_1R, .tarif_3R{
+    font-size: 50px;
+  }
+  .booking{
+    font-size: 30px;
+  }
+  .tarif_info{
+    height: 400px;
+    margin:0px 10px;
+  }
+  .minute_tarif{
+    font-size: 40px;
+  }
+  .circle{
+    height: 70px;
+    width: 70px;
+  }
+  .img_phone{
+    height: 470px;
+  }
+  .download_button{
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .download_description{
+    font-size: 15px;
+  }
+}
+
+@media(max-width:530px){
+.list_head{
+  display:none;
+}
+.menu_header{
+  display: block;
+}
+.header_Ecoride{
+  margin-right: 100px;
+}
+.slogan_back{
+  width: 370px;
+  height: 130px;
+}
+.slogan{
+  font-size: 25px;
+}
+.tarif_button{
+  width: 150px;
+  height: 45px;
+  font-size: 18px;
+}
+.title{
+  font-size: 25px;
+}
+.sentence{
+  font-size: 17px;
+}
+.sale_img{
+  height: 90px;
+  width: 270px;
+}
+.eco_img{
+  width: 190px;
+}
+.station_img{
+  width: 220px;
+}
+.scooter, .bike{
+  height: 40px;
+  font-size: 20px;
+  width: 180px;
+}
+.arrow{
+  height: 40px;
+  width: auto;
+}
+.tarif_1R, .tarif_3R{
+  font-size: 40px;
+}
+.booking{
+  font-size: 25px;
+}
+.minute_tarif{
+  font-size: 35px;
+}
+.tarif_info{
+  height: 370px;
+}
+.first_img_div, .second_img_div{
+  height: 520px;
+}
+.img_phone{
+  height: 440px;
+}
+.download_button {
+  width: 165px;
+  height: 45px;
+  font-size: 18px;
+}
+.download_description {
+  font-size: 13px;
+}
+}
+@media(max-width:500px){
+  .why_we_list{
+    padding: 0px;
+  }
+  .minute_tarif{
+    font-size: 30px;
+  }
+
+}
+@media(max-width:450px){
+  .slogan_back {
+    width: 320px;
+    height: 120px;
+}
+.slogan {
+  font-size: 22px;
+}
+.sentence {
+  font-size: 15px;
+}
+h3{
+  font-size: 18px;
+}
+.sale_img {
+  height: 90px;
+  width: 220px;
+}
+.eco_img {
+  width: 155px;
+}
+.station_img {
+  width: 185px;
+}
+.minute_tarif {
+  font-size: 25px;
+}
+.tarif_info {
+  height: 330px;
+  border-radius:80px;
+  margin: 0px;
+}
+.first_img_div, .second_img_div {
+  height: 500px;
+}
+}
+@media(max-width:400px) and (min-width: 375px){
+  .slogan_back {
+    width: 300px;
+    height: 100px;
+}
+.slogan {
+  font-size: 20px;
+}
+.tarif_button {
+  width: 150px;
+  height: 45px;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.parent{
+  flex-direction: column;
+  align-items:center;
+  margin: 10px 0px;
+}
+.sale_img {
+  height: 90px;
+  width: 100px;
+  margin-right: 0px;
+}
+.eco_img {
+  width: 100px;
+  margin-right: 0px;
+}
+.description {
+  text-align: center;
+  width: 300px;
+}
+.station_img {
+  width: 100px;
+  margin-right: 0px;
+}
+}
+@media (max-width:375px){
+  .subscribe{
+    width: 55px;
+  }
+  .subscribe span{
+    display: none;
+  }
+  .copyrigth{
+    font-size: 13px;
+  }
+  footer div:nth-child(2){
+    padding-right: 37px;
+  }
+  .nav-links li a{
+    font-size: 15px;
+  }
+  .parent {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px -30px;
+}
+.scooter, .bike {
+  height: 40px;
+  font-size: 18px;
+  width: 150px;
+}
+.tarif_info {
+  height: 305px;
+  border-radius: 50px;
+}
+.arrow {
+  height: 35px;
+  width: auto;
+}
+.circle {
+  height: 55px;
+  width: 55px;
+}
+.first_img_div, .second_img_div {
+  height: 420px;
+}
+.img_phone {
+  height: 400px;
+}
+.slogan_back {
+  width: 280px;
+  height: 100px;
+}
+.title {
+  font-size: 22px;
+}
+.download_description {
+  font-size: 12px;
+}
+.sale_img {
+  height: 90px;
+  width: 100px;
+  margin-right: 0px;
+}
+.eco_img {
+  width: 100px;
+  margin-right: 0px;
+}
+.description {
+  text-align: center;
+  width: 300px;
+}
+.station_img {
+  width: 100px;
+  margin-right: 0px;
+}
+}
+@media (max-width:340px){
+  .slogan_back {
+    width: 200px;
+    height: 100px;
+}
+.slogan {
+  font-size: 20px;
+}
+}

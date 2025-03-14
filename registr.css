@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/background_mysite.png"); /* Фото на фоне*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFD700; /* Желтый цвет текста */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #222; /* Темно-серый фон контейнера */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Желтая тень */
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #FFD700; /* Желтая рамка */
+    border-radius: 4px;
+    background-color: #333; /* Темно-серый фон для полей ввода */
+    color: #FFD700; /* Желтый текст в полях ввода */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #FFEA00; /* Светло-желтая рамка при фокусе */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #FFD700; /* Желтая кнопка */
+    color: #000; /* Черный текст на кнопках */
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFC300; /* Более темный желтый при наведении */
+}
+
+.back-btn {
+    background-color: #ff4500; /* Красный цвет для кнопки "Вернуться на главный" */
+}
+
+.back-btn:hover {
+    background-color: #ff6347; /* Более светлый красный при наведении */
+}
+
+/* Медиа-запросы для респонсивности */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Увеличиваем ширину контейнера на маленьких экранах */
+        padding: 15px; /* Уменьшаем отступы */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Уменьшаем размер заголовка */
+    }
+
+    .btn {
+        padding: 8px; /* Уменьшаем отступы на кнопках */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px; /* Уменьшаем отступы в полях ввода */
+        width: 96%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.2em; /* Дополнительное уменьшение размера заголовка для очень маленьких экранов */
+    }
+
+    .btn {
+        font-size: 0.9em; /* Уменьшаем размер текста на кнопках */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 0.9em; /* Уменьшаем размер текста в полях ввода */
+        width: 94%;
+    }
+}
